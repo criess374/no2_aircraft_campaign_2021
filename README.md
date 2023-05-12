@@ -46,10 +46,13 @@ There is only one parent directory present containing all files.
 ============================================================================================================
 
 - parent_folder/
+- 
 "{profilenumber}".csv 
 	-One .csv-file for each of the vertical profiles.
+	
 mean_profile.csv 
 	-This is the mean of the campaign, representing a summerday North Sea profile over a busy ship track
+	
 TM5_"{profilenumber}".csv 
 	- One .csv file for each TM5 profile coinciding with the measured profiles
 
