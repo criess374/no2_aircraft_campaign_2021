@@ -61,30 +61,54 @@ TM5_"{profilenumber}".csv
 ============================================================================================================
 
 The "{profilenumber}".csv -files for the single profiles have the following columns:
+
 "profile": name of the profile
+
 "mid_layer_altitude [m]": center altitude of the layer in meters
+
 "Lat": mean latitude (in Degreees North) 
+
 "Lon": mean longitude (in degrees East)
+
 "NO2 [molec/m^3]": mean corrected number density of NO2 in the layer (in molec/m^3). if multiplied with layer thickness (50m), this yields the sub-columns
+
 "w_n [m/s]": mean northward wind in the layer (in m/s)
+
 "w_e [m/s]": mean eastward wind in the layer (in m/s)
+
 "start [UTC]": starting time of the profile flight (dd.mm.yyyy hh:mm:ss in UTC)
+
 "end [UTC]": end time of the profile flights (dd.mm.yyyy hh:mm:ss in UTC)
 
+
 The mean_profile.csv has the following columns:
+
 "profile": name of the profile
+
 "mid_layer_altitude [m]": center altitude of the layer in meters
+
 "NO2 [molec/m^3]": mean corrected number density of NO2 in the layer (in molec/m^3) of all ten profiles. if multiplied with layer thickness (50m), this yields the sub-columns
+
 "NO2_sem [molec/m^3]": standard error of NO2 in the layer (in molec/m^3) of all ten profiles
 
+
+
 The TM5_"{profilenumber}".csv have the following format:
+
 Alt_int: Altitude of the upper layer interface in [m]. Calculated from the TM5 pressure levels using ERA pressure profiles.
+
 Alt_mid: Altitude of the middle of the layer in [m]. Calculated from the TM5 pressure levels using ERA pressure profiles.
+
 NO2: TM5 NO2 in [molec/m^3] for the given layer. Calculated as the distance weighted mean from TM5 files at https://scihub.copernicus.eu
+
 p: mid-level pressure of the layer and using ERA5 to translete from mixing ratio	
+
 NO2_mr: NO2 as mixing ratio for each layer
+
 AK: Averaging Kernel for each layer as provided in the TM5 files
+
 AK_trop: tropospheric Averaging Kernel for each layer as provided in the TM5 files
+
 T: temperature of each layer from ERA5 data
 
 ============================================================================================================
